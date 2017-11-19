@@ -1,0 +1,189 @@
+
+
+.buttons {
+    margin:0 auto;
+}
+
+
+.st0 {
+    fill: #173808;
+}
+
+.st1 {
+    fill: #050505;
+}
+
+.st2 {
+    fill: #C1A91A;
+    stroke: #000000;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-miterlimit: 5;
+    stroke-dasharray: 800;
+}
+
+.st3 {
+    fill: none;
+    stroke: #000000;
+    stroke-miterlimit: 10;
+}
+
+.st4 {
+    fill: #020202;
+    stroke: #000D01;
+    stroke-miterlimit: 10;
+}
+
+.st5 {
+    fill: #FCFCFC;
+    stroke: #000000;
+    stroke-miterlimit: 10;
+}
+
+.st6 {
+    fill: #020202;
+    stroke: #000000;
+    stroke-miterlimit: 10;
+}
+
+.st7 {
+    fill: none;
+    stroke: #000000;
+    stroke-width: 3;
+    stroke-miterlimit: 10;
+}
+
+.green__eyes .eye__color {
+    fill: green;
+    stroke: #e19142;
+}
+
+.sad .mouth {
+    transform: rotate(190deg) scale(.8);
+    transform-origin: 120px 155px;
+}
+
+.sad .eyebrow {
+    transform: scaleX(0.8) scaleY(1.1);
+    transform-origin: 100px 50px;
+}
+
+@keyframes moveEyes {
+    20% {
+        transform: translate(-5px, -8px);
+    }
+    40% {
+        transform: translate(0, 0);
+    }
+    65% {
+        transform: translate(5px, -10px);
+    }
+}
+
+.move__around .eye__group {
+    animation: moveEyes 12s infinite;
+}
+
+
+@keyframes innerMoveEyes {
+    20% {
+        transform: translate(-5px, -6px);
+
+    }
+    40% {
+        transform: translate(5px, 5px);
+    }
+    60% {
+        transform: translate(5px, -5px);
+    }
+    80% {
+        transform: translate(-5px, 4px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+
+.move__around .inner__eye__group {
+    animation: innerMoveEyes 12s infinite;
+transition: 10s;
+}
+
+
+@keyframes eyebrow {
+    20% {
+
+        transform: scaleX(0.8) scaleY(1.1) translate(-5px, -8px);
+
+    }
+    40% {
+        transform: translate(0, 0) skewY(10deg);
+    }
+    65% {
+        transform: translate(5px, -10px) scaleX(1) scaleY(1.1);
+
+    }
+
+}
+
+
+.move__around .eyebrow {
+    animation: eyebrow 12s infinite;
+    transform-origin: 100px 30px;
+}
+
+
+@keyframes move {
+    20% {
+
+        transform: rotateX(10deg) rotateY(10deg);
+
+    }
+    40% {
+        transform: rotateX(25deg) rotateY(10deg);
+    }
+    60% {
+        transform: rotateX(-10deg) rotateY(-10deg);
+
+    }
+    85% {
+        transform: rotateX(-10deg) rotateY(-15deg);
+    }
+
+}
+
+.move__around {
+    animation: move 12s infinite;
+}
+
+
+@keyframes stem_move {
+    20% {
+
+
+        transform: rotateX(-10deg) rotateY(-10deg);
+
+    }
+    40% {
+
+        transform: rotateX(-10deg) rotateY(-10deg);
+    }
+    60% {
+        transform: rotateX(25deg) rotateY(10deg);
+
+    }
+    85% {
+        transform: rotateX(10deg) rotateY(10deg);
+    }
+
+}
+
+
+.move__around .clover__stem {
+    animation: stem_move 12s infinite;
+}
+
+.clover_cover {
+    perspective: 900px;
+}

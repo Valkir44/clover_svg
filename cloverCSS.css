@@ -186,4 +186,5 @@ transition: 10s;
 
 .clover_cover {
     perspective: 900px;
+    margin: 25px;
 }
